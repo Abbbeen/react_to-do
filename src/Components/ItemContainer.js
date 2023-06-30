@@ -6,9 +6,9 @@ function ItemContainer(props) {
     <div className="main-item">
       <h1 className="main-title">Today's Tasks</h1>
       <ItemLists item={props.itemData[0]}/>
-      {/* <ItemLists />
-      <ItemLists />
-      <ItemLists /> */}
+      <ItemLists  item={props.itemData[1]} />
+      <ItemLists item={props.itemData[2]} />
+      <ItemLists item={props.itemData[3]} />
     </div>
   );
 }
