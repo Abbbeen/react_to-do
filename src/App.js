@@ -14,12 +14,20 @@ function App() {
     setFinalData((prevData) => {
       return [sendedData, ...finalData];
     });
+    
     //  console.log("from app ",finalData);
+  }
+
+  function appDeleteHandler(finalIndex){
+    const updatedItems=[...finalData];
+    updatedItems.splice(finalIndex, 1);
+    setFinalData(updatedItems);
+    // console.log("from delete", finalData);
   }
   return (
     <div className="App">
       <NewItem sendData={saveDataHandler} />
-      <ItemContainer itemData={finalData} />
+      <ItemContainer finalDelete={appDeleteHandler} itemData={finalData} />
     </div>
   );
 }
