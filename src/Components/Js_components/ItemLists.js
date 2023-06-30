@@ -5,13 +5,11 @@ import "../CSS_components/ItemLists.css";
 function ItemLists(props) {
   // const [deleteValue,setDeleteValue]=useState("");
 
-  function deleteHandler(){
-    const index=props.indexed;
+  function deleteHandler() {
+    const index = props.indexed;
     // console.log(index);
     props.toBeDelete(index);
-    
   }
-
 
   return (
     <div className="item">
@@ -19,7 +17,9 @@ function ItemLists(props) {
         <DateItem itemDate={props.item.date} />
         <div className="item-title">{props.item.title}</div>
       </div>
-      <button className="item-part-2" onClick={deleteHandler}>Delete</button>
+      <button className="item-part-2" onClick={deleteHandler}>
+        Delete
+      </button>
     </div>
   );
 }

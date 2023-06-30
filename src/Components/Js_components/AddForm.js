@@ -5,7 +5,7 @@ import "../CSS_components/AddForm.css";
 function AddForm(props) {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
-  const [error,setError]=useState();
+  const [error, setError] = useState();
 
   function submissionHandler(event) {
     event.preventDefault();
@@ -14,11 +14,11 @@ function AddForm(props) {
       date: new Date(enteredDate),
       title: enteredTitle,
     };
-    if(enteredTitle.trim().length===0 || enteredDate.trim().length===0 ) {
+    if (enteredTitle.trim().length === 0 || enteredDate.trim().length === 0) {
       setError({
-        title:"Error Detected",
-        message:"Invalid Input Is Occured!!!",
-      })
+        title: "Error Detected",
+        message: "Invalid Input Is Occured!!!",
+      });
       return;
     }
     // console.log(enteredData);
@@ -38,14 +38,14 @@ function AddForm(props) {
     });
   }
 
-  function onConfirm(){
+  function onConfirm() {
     setError(null);
   }
 
   return (
     <div>
       {error && <ErrorMessage sendConfirm={onConfirm} errorData={error} />}
-      
+
       <form onSubmit={submissionHandler}>
         <h1 className="form-title">add new task</h1>
         <div className="new-form">
