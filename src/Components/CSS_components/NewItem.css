@@ -1,5 +1,6 @@
 .new-item {
     width:50%;
     border:solid 2px black;
+    margin-top: 1rem;
     padding: 1rem;
 }

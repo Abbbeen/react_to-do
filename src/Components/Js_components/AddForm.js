@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ErrorMessage from "./ErrorMessage";
-import "./AddForm.css";
+import "../CSS_components/AddForm.css";
 
 function AddForm(props) {
   const [enteredTitle, setEnteredTitle] = useState("");

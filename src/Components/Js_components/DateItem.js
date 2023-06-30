@@ -1,4 +1,4 @@
-import "./DateItem.css";
+import "../CSS_components/DateItem.css";
 
 function DateItem(props) {
   const newDate = props.itemDate;

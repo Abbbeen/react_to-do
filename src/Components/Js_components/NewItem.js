@@ -1,4 +1,4 @@
-import "./NewItem.css";
+import "../CSS_components/NewItem.css"
 import AddForm from "./AddForm";
 
 function NewItem(props) {

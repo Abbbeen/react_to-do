@@ -1,4 +1,4 @@
-import "./ErrprMessage.css";
+import "../CSS_components/ErrprMessage.css";
 
 function ErrorMessage(props) {
     function closeHandler(){

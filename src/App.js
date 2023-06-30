@@ -1,7 +1,7 @@
 import { useState } from "react";
-import ItemContainer from "./Components/ItemContainer";
+import ItemContainer from "./Components/Js_components/ItemContainer";
 import "./App.css";
-import NewItem from "./Components/NewItem";
+import NewItem from "./Components/Js_components/NewItem";
 
 const data = [
   { id: 20, date: new Date(2023, 4, 28), title: "eating" },
