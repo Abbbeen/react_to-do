@@ -1,5 +1,6 @@
 import ItemContainer from "./Components/ItemContainer";
 import "./App.css";
+import NewItem from "./Components/NewItem";
 
 function App() {
   const data = [
@@ -10,6 +11,7 @@ function App() {
   ];
   return (
     <div className="App">
+      <NewItem />
       <ItemContainer itemData={data}/>
     </div>
   );
