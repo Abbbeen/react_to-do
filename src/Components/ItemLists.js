@@ -7,7 +7,7 @@ function ItemLists(props) {
 
   function deleteHandler(){
     const index=props.indexed;
-    console.log(index);
+    // console.log(index);
     props.toBeDelete(index);
     
   }
