@@ -1,6 +1,5 @@
 import "./DateItem.css";
 
-
 function DateItem(props) {
   const newDate = props.itemDate;
   const month = newDate.toLocaleString("en-US", { month: "long" });

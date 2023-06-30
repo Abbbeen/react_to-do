@@ -11,7 +11,6 @@ function AddForm(props) {
       id: Math.random(),
       date: new Date(enteredDate),
       title: enteredTitle,
-     
     };
     console.log(enteredData);
     props.formData(enteredData);
